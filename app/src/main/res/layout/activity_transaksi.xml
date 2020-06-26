@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.TransaksiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_10mdp"
+        android:layout_marginLeft="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:id="@+id/rlitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_brg"
+            android:textSize="@dimen/_14font_mdp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvnama"
+            android:layout_marginTop="@dimen/_10mdp">
+
+        <TextView
+            android:id="@+id/tvrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14font_mdp"
+            android:text="Rp. "/>
+
+        <TextView
+            android:id="@+id/tvharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvrp"
+            android:textSize="@dimen/_14font_mdp"
+            android:text="@string/harga"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rlitem"
+        android:layout_marginLeft="@dimen/_15mdp">
+
+        <com.travijuu.numberpicker.library.NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15mdp">
+
+        <RelativeLayout
+            android:id="@+id/rltot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvtotal0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tot_byr"
+            android:textSize="@dimen/_16font_mdp"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvtot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16font_mdp"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1mdp"
+            android:layout_marginTop="@dimen/_3mdp"
+            android:background="@color/grey_500"/>
+
+        <RelativeLayout
+            android:id="@+id/rlbayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15mdp">
+
+            <TextView
+                android:id="@+id/tvbayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayar"
+                android:textSize="@dimen/_16font_mdp"
+                android:layout_marginTop="@dimen/_20mdp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvbayar"
+                android:layout_marginLeft="@dimen/_25mdp"
+                >
+
+                <EditText
+                    android:id="@+id/etbayar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textSize="@dimen/_16font_mdp"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:inputType="number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1mdp"
+            android:layout_marginTop="@dimen/_3mdp"
+            android:background="@color/grey_500"/>
+
+        <RelativeLayout
+            android:id="@+id/rlsisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15mdp">
+
+            <TextView
+                android:id="@+id/tvsisa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kembali"
+                android:textSize="@dimen/_16font_mdp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/tvsisa1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16font_mdp"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1mdp"
+            android:layout_marginTop="@dimen/_3mdp"
+            android:background="@color/grey_500"/>
+    <Button
+        android:id="@+id/btnbayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnSignIn"
+        android:textSize="@dimen/_16font_mdp"
+        android:layout_marginLeft="@dimen/_15mdp"
+        android:layout_marginRight="@dimen/_15mdp"
+        android:text="@string/bayar"
+        android:layout_below="@id/rlparent"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Vending Machine</string>
+    <string name="beli">Beli</string>
+    <string name="update_stock">Update Stock</string>
+    <string name="nama_brg">Nama Barang</string>
+    <string name="harga">Harga Barang</string>
+    <string name="stock">Stock</string>
+    <string name="tot_byr">Total Pembayaran</string>
+    <string name="bayar">BAYAR</string>
+    <string name="kembali">Kembali</string>
+
+
+</resources>

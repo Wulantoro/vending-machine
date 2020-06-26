@@ -1,0 +1,4 @@
+include ':dynamicsizeslib'
+include ':app'
+project(':dynamicsizeslib').projectDir = new File(rootDir, 'app/libs/dynamicsizeslib/')
+rootProject.name = "Vending Machine"

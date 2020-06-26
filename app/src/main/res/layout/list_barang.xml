@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="@dimen/_5mdp"
+    card_view:cardElevation="@dimen/_3mdp"
+    card_view:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15mdp">
+
+    <RelativeLayout
+        android:id="@+id/rlitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15mdp">
+
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_brg"
+            android:textSize="@dimen/_14font_mdp"/>
+
+        <TextView
+            android:id="@+id/tvrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14font_mdp"
+            android:layout_below="@id/tvnama"
+            android:text="RP. "/>
+
+        <TextView
+            android:id="@+id/tvharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvnama"
+            android:layout_toRightOf="@id/tvrp"
+            android:textSize="@dimen/_14font_mdp"
+            android:text="@string/harga"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rlitem"
+        android:layout_marginLeft="@dimen/_15mdp">
+
+        <TextView
+            android:id="@+id/tvstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50mdp"
+            android:text="@string/stock"
+            android:textSize="@dimen/_14font_mdp"/>
+
+        <TextView
+            android:id="@+id/tvstock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14font_mdp"
+            android:layout_toRightOf="@id/tvstock"
+            android:layout_marginLeft="@dimen/_15mdp"/>
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
